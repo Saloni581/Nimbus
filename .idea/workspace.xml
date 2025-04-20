@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73bdc661-e7a7-4853-b526-30ebce44257f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/(auth)/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/sign-in/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/sign-up/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/AuthForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/OTPModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/actions/user.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/appwrite/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/appwrite/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/globe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/window.svg" beforeDir="false" />
-    </list>
+    <list default="true" id="73bdc661-e7a7-4853-b526-30ebce44257f" name="Changes" comment="Implement authentication form for sign-in and sign-up using ShadCN and Zod. Add fully functional real-time Email OTP authentication via Appwrite." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,12 +81,25 @@
       <workItem from="1745052917888" duration="604000" />
       <workItem from="1745056524403" duration="27000" />
       <workItem from="1745056739131" duration="1389000" />
-      <workItem from="1745141730383" duration="15856000" />
+      <workItem from="1745141730383" duration="16240000" />
     </task>
+    <task id="LOCAL-00001" summary="Implement authentication form for sign-in and sign-up using ShadCN and Zod. Add fully functional real-time Email OTP authentication via Appwrite.">
+      <option name="closed" value="true" />
+      <created>1745163726581</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745163726581</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implement authentication form for sign-in and sign-up using ShadCN and Zod. Add fully functional real-time Email OTP authentication via Appwrite." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement authentication form for sign-in and sign-up using ShadCN and Zod. Add fully functional real-time Email OTP authentication via Appwrite." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
