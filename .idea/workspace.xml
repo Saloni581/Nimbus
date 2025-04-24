@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73bdc661-e7a7-4853-b526-30ebce44257f" name="Changes" comment="Implement authentication form for sign-in and sign-up using ShadCN and Zod. Add fully functional real-time Email OTP authentication via Appwrite." />
+    <list default="true" id="73bdc661-e7a7-4853-b526-30ebce44257f" name="Changes" comment="Implement authentication form for sign-in and sign-up using ShadCN and Zod. Add fully functional real-time Email OTP authentication via Appwrite.">
+      <change afterPath="$PROJECT_DIR$/app/(root)/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/FileUploader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MobileNavigation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Search.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Thumbnail.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/actions/file.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AuthForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AuthForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/actions/user.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/user.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/appwrite/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/appwrite/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/appwrite/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/appwrite/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/window.svg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +72,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\lathw\\Desktop\\nimbus\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -81,7 +108,12 @@
       <workItem from="1745052917888" duration="604000" />
       <workItem from="1745056524403" duration="27000" />
       <workItem from="1745056739131" duration="1389000" />
-      <workItem from="1745141730383" duration="16240000" />
+      <workItem from="1745141730383" duration="16442000" />
+      <workItem from="1745247055851" duration="8279000" />
+      <workItem from="1745415417265" duration="4614000" />
+      <workItem from="1745428240988" duration="3357000" />
+      <workItem from="1745493496812" duration="5632000" />
+      <workItem from="1745499898479" duration="6557000" />
     </task>
     <task id="LOCAL-00001" summary="Implement authentication form for sign-in and sign-up using ShadCN and Zod. Add fully functional real-time Email OTP authentication via Appwrite.">
       <option name="closed" value="true" />
@@ -91,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745163726581</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implement authentication form for sign-in and sign-up using ShadCN and Zod. Add fully functional real-time Email OTP authentication via Appwrite.">
+      <option name="closed" value="true" />
+      <created>1745163918508</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745163918508</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,8 +145,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/actions/user.actions.ts</url>
-          <line>9</line>
+          <url>file://$PROJECT_DIR$/components/AuthForm.tsx</url>
+          <line>44</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
