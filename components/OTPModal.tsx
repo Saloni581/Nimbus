@@ -92,7 +92,7 @@ const OtpModal = ({email, accountId} : {email: string, accountId: string}) => {
                     </Button>
                 </div>
                 <div className="subtitle-2 mt-2 text-center text-light-100">
-                    Didn&spos;t get a code?
+                    Didn&apos;t get a code?
                     <Button
                         type="button"
                         variant="link"
