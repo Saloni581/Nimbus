@@ -34,13 +34,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
             <section className="flex flex-1 flex-col items-center bg-white p-4 py-10 lg:justify-center lg:p-10 lg:py-0">
                 <div className="mb-16 lg:hidden">
-                    <Image
-                        src="/assets/icons/logo-full-brand.svg"
-                        alt="logo"
-                        width={224}
-                        height={82}
-                        className="h-auto w-[200px] lg:w-[250px]"
-                    />
+                    <div className="flex">
+                        <Image
+                            src="/assets/icons/logo_big.png"
+                            alt="logo"
+                            width={100}
+                            height={50}
+                            className="h-auto"
+                        />
+                        <h1 className="font-bold text-5xl text-brand mt-8">Nimbus</h1>
+                    </div>
                 </div>
 
                 {children}
