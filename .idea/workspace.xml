@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73bdc661-e7a7-4853-b526-30ebce44257f" name="Changes" comment="Fix dynamic access of server functionalities like cookies">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(auth)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(auth)/layout.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="73bdc661-e7a7-4853-b526-30ebce44257f" name="Changes" comment="Fix dynamic access of server functionalities like cookies" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +93,7 @@
       <workItem from="1745558062667" duration="14196000" />
       <workItem from="1745599363924" duration="1090000" />
       <workItem from="1745640943562" duration="11025000" />
-      <workItem from="1745652654480" duration="299000" />
+      <workItem from="1745652654480" duration="617000" />
     </task>
     <task id="LOCAL-00001" summary="Implement authentication form for sign-in and sign-up using ShadCN and Zod. Add fully functional real-time Email OTP authentication via Appwrite.">
       <option name="closed" value="true" />

@@ -168,7 +168,7 @@
 
 /*  !* ===== TYPOGRAPHY *!*/
   .h1 {
-    @apply text-[34px] leading-[42px] font-bold;
+    @apply text-[34px] leading-[42px] font-bold text-brand;
   }
   .h2 {
     @apply text-[24px] leading-[36px] font-bold text-brand;
