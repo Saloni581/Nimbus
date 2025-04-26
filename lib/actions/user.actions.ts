@@ -5,7 +5,6 @@ import {appwriteConfig} from "@/lib/appwrite/config";
 import {ID, Query} from "node-appwrite";
 import {parseStringify} from "@/lib/utils";
 import {cookies} from "next/headers";
-import {avatarPlaceholder} from "@/constants";
 import {redirect} from "next/navigation";
 
 const getUserByEmail = async (email: string) => {
@@ -46,7 +45,7 @@ export const createAccount = async ({fullName, email}: {fullName: string, email:
             {
                 fullName,
                 email,
-                avatar: avatarPlaceholder,
+                avatar: "",
                 accountId,
             }
         )
