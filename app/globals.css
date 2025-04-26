@@ -3,8 +3,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-brand-100: #ea6365;
-  --color-brand: #fa7275;
+  --color-brand-100: #03dfe2;
+  --color-brand: #3fc7d7;
 
   --color-red: #ff7474;
   --color-error: #b80000;
@@ -168,10 +168,10 @@
 
 /*  !* ===== TYPOGRAPHY *!*/
   .h1 {
-    @apply text-[34px] leading-[42px] font-bold;
+    @apply text-[34px] leading-[42px] font-bold text-brand;
   }
   .h2 {
-    @apply text-[24px] leading-[36px] font-bold;
+    @apply text-[24px] leading-[36px] font-bold text-brand;
   }
   .h3 {
     @apply text-[20px] leading-[28px] font-semibold;

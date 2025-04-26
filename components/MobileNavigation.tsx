@@ -36,13 +36,15 @@ const MobileNavigation = ({
 
     return (
         <header className="mobile-header">
-            <Image
-                src="/assets/icons/logo-full-brand.svg"
-                alt="logo"
-                width={120}
-                height={52}
-                className="h-auto"
-            />
+            <div className="h-auto flex">
+                <Image
+                    src="/assets/icons/logo.png"
+                    alt="logo"
+                    width={48}
+                    height={20}
+                />
+                <h1 className="h2 mt-3">Nimbus</h1>
+            </div>
 
             <Sheet open={open} onOpenChange={setOpen}>
                 <SheetTrigger>
@@ -68,12 +70,12 @@ const MobileNavigation = ({
                                 <p className="caption">{email}</p>
                             </div>
                         </div>
-                        <Separator className="mb-4 bg-light-200/20" />
+                        <Separator className="mb-4 bg-light-200/20"/>
                     </SheetTitle>
 
                     <nav className="mobile-nav">
                         <ul className="mobile-nav-list">
-                            {navItems.map(({ url, name, icon }) => (
+                            {navItems.map(({url, name, icon}) => (
                                 <Link key={name} href={url} className="lg:w-full">
                                     <li
                                         className={cn(
@@ -98,10 +100,10 @@ const MobileNavigation = ({
                         </ul>
                     </nav>
 
-                    <Separator className="my-5 bg-light-200/20" />
+                    <Separator className="my-5 bg-light-200/20"/>
 
                     <div className="flex flex-col justify-between gap-5 pb-5">
-                        <FileUploader ownerId={ownerId} accountId={accountId} />
+                        <FileUploader ownerId={ownerId} accountId={accountId}/>
                         <Button
                             type="submit"
                             className="mobile-sign-out-button"
