@@ -17,7 +17,7 @@ import Image from 'next/image'
 import {Button} from "@/components/ui/button";
 import {sendEmailOTP, verifySecret} from "@/lib/actions/user.actions";
 import {useRouter} from "next/navigation";
-
+import * as DialogPrimitive from "@radix-ui/react-dialog"; // import Radix manually
 
 
 const OtpModal = ({email, accountId} : {email: string, accountId: string}) => {
@@ -46,8 +46,17 @@ const OtpModal = ({email, accountId} : {email: string, accountId: string}) => {
     }
 
     return (
-        <Dialog open={isOpen} onOpenChange={setIsOpen}>
-            <DialogContent className="shad-alert-dialog">
+        <DialogPrimitive.Root
+            open={isOpen}
+            onOpenChange={setIsOpen}
+        >
+            <DialogPrimitive.Portal>
+                <DialogPrimitive.Overlay className="fixed inset-0 bg-black/50 z-50" />
+            <DialogPrimitive.Content
+                className="shad-alert-dialog"
+                onInteractOutside={e => e.preventDefault()}
+                onEscapeKeyDown={e => e.preventDefault()}
+            >
                 <DialogHeader className="relative flex justify-center">
                     <DialogTitle className="h2 text-center">
                         Enter your OTP
@@ -64,12 +73,9 @@ const OtpModal = ({email, accountId} : {email: string, accountId: string}) => {
                     </DialogDescription>
                     <InputOTP maxLength={6} value={password} onChange={setPassword}>
                         <InputOTPGroup className="shad-otp">
-                            <InputOTPSlot index={0} className="shad-otp-slot"/>
-                            <InputOTPSlot index={1} className="shad-otp-slot"/>
-                            <InputOTPSlot index={2} className="shad-otp-slot"/>
-                            <InputOTPSlot index={3} className="shad-otp-slot"/>
-                            <InputOTPSlot index={4} className="shad-otp-slot"/>
-                            <InputOTPSlot index={5} className="shad-otp-slot"/>
+                            {[...Array(6)].map((_, i) => (
+                                <InputOTPSlot key={i} index={i} className="shad-otp-slot" />
+                            ))}
                         </InputOTPGroup>
                     </InputOTP>
                 </DialogHeader>
@@ -104,8 +110,9 @@ const OtpModal = ({email, accountId} : {email: string, accountId: string}) => {
                 </div>
                 </div>
                 </DialogFooter>
-            </DialogContent>
-        </Dialog>
+            </DialogPrimitive.Content>
+            </DialogPrimitive.Portal>
+        </DialogPrimitive.Root>
 
     );
 };
