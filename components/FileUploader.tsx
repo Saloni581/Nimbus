@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useCallback, useState } from "react";
-
 import { useDropzone } from "react-dropzone";
 import { Button } from "@/components/ui/button";
 import { cn, convertFileToUrl, getFileType } from "@/lib/utils";
@@ -27,9 +26,9 @@ const FileUploader = ({ ownerId, accountId, className }: FileUploaderProps) => {
                     );
                     toast("", {
                         description: (
-                            <p className="body-2 text-white">
+                            <p className="body-2 text-black">
                                 <span className="font-semibold">{file.name}</span> is too large.
-                                Max file size is 50MB.
+                                Max file size is 1GB.
                             </p>
                         ),
                     })
@@ -71,7 +70,7 @@ const FileUploader = ({ ownerId, accountId, className }: FileUploaderProps) => {
                     width={24}
                     height={24}
                 />{" "}
-                <p>Upload</p>
+                Drag 'n' drop some files here or click to select files
             </Button>
             {files.length > 0 && (
                 <ul className="uploader-preview-list">
