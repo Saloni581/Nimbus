@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "TAILWIND_DISABLE_NATIVE=true next dev",
+    "build": "TAILWIND_DISABLE_NATIVE=true next build",
+    "start": "TAILWIND_DISABLE_NATIVE=true next start",
     "lint": "next lint"
   },
   "dependencies": {
